@@ -136,11 +136,10 @@ header {
     line-height: 45px;
     cursor: pointer;
     bottom: 40px;
-    right: 20px;
+    right: -80px;
     border-radius: 2px;
     color: #fff;
     transition: var(--main-transition);
-    opacity: 0;
     font-size: 30px;
 }
 
