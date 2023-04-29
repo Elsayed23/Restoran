@@ -467,7 +467,7 @@ header .container .nav ul .active::before {
 /* Services */
 .services {
     padding: 96px 0;
-    background-color: #F1F8FF;
+    background-color: #fff;
 }
 
 .services .container {
@@ -511,7 +511,7 @@ header .container .nav ul .active::before {
 /* About */
 .about {
     padding: var(--sec-padding) 0;
-    background: #fff;
+    background-color: #F1F8FF;
 }
 
 .about .container {
