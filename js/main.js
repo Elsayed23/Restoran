@@ -20,9 +20,9 @@ let toTop = document.querySelector(".to_top");
 
 window.addEventListener("scroll", () => {
     if (this.scrollY >= 350) {
-        toTop.style.opacity = "1";
+        toTop.style.right = "20px"
     } else {
-        toTop.style.opacity = "";
+        toTop.style.right = "-80px";
     }
 })
 toTop.addEventListener("click", () => {
