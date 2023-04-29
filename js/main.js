@@ -59,3 +59,72 @@ mealbtns.forEach((ele) => {
         ele.classList.add("active");
     });
 });
+
+
+
+
+let home = document.querySelector(".int");
+
+let about = document.querySelector(".about");
+let services = document.querySelector(".services");
+let menu = document.querySelector(".menu")
+let footer = document.querySelector("footer");
+let links = document.querySelectorAll("header .container .nav ul li a");
+
+
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY >= home.offsetTop) {
+        links.forEach((e) => {
+            if (e.getAttribute("href") === "#") {
+                links.forEach((ele) => {
+                    ele.classList.remove("active")
+                })
+                e.classList.add("active")
+            }
+        })
+    }
+    if (window.scrollY >= about.offsetTop - 83) {
+        links.forEach((e) => {
+            if (e.getAttribute("href") === "#about") {
+                links.forEach((ele) => {
+                    ele.classList.remove("active")
+                })
+                e.classList.add("active")
+            }
+        })
+    }
+
+    if (window.scrollY >= services.offsetTop - 83) {
+        links.forEach((e) => {
+            if (e.getAttribute("href") === "#service") {
+                links.forEach((ele) => {
+                    ele.classList.remove("active")
+                })
+                e.classList.add("active")
+            }
+        })
+    }
+
+    if (window.scrollY >= menu.offsetTop - 83) {
+        links.forEach((e) => {
+            if (e.getAttribute("href") === "#menu") {
+                links.forEach((ele) => {
+                    ele.classList.remove("active")
+                })
+                e.classList.add("active")
+            }
+        })
+
+    }
+    if (window.scrollY >= footer.offsetTop - 670) {
+        links.forEach((e) => {
+            if (e.getAttribute("href") === "#contact") {
+                links.forEach((ele) => {
+                    ele.classList.remove("active")
+                })
+                e.classList.add("active")
+            }
+        })
+    }
+})
